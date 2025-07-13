@@ -10,6 +10,9 @@ export class CoastersService {
     // Logic to create a coaster
     console.log('Creating coaster with data:', coasterData);
 
-    // TODO save coaster in store
+    return this.storeService.updateStore({
+      id: `coaster-${coasterData.id}`,
+      data: coasterData,
+    });
   }
 }

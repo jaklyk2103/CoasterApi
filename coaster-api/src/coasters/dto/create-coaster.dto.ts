@@ -1,4 +1,5 @@
 export class CreateCoasterDto {
+  id: string;
   numberOfStaffNeeded: number;
   numberOfClientsPerDay: number;
   routeLengthInMeters: number;
